@@ -1,18 +1,17 @@
 
-<h5>Slade Knepp</h5>
+<div id="title">Slade Knepp</div>
 <nav class="navbar navbar-expand-lg navbar-toggleable-md navbar-light">
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <!link webpages by going through controller>
         <div class="navbar-nav mx-auto">
             <a class="nav-item nav-link <?php if(isset($homeActive) && $homeActive){echo 'active';} ?>" href="controller.php?action=directToHomePage">Home <span class="sr-only">(current)</span></a>
             <a class="nav-item nav-link <?php if(isset($aboutActive) && $aboutActive){echo 'active';} ?>" href="controller.php?action=directToAboutPage">About</a>
             <a class="nav-item nav-link <?php if(isset($contactMeActive) && $contactMeActive){echo 'active';} ?>" href="controller.php?action=directToContactMePage">Contact Me</a>
             <a class="nav-item nav-link <?php if(isset($projectsActive) && $projectsActive){echo 'active';} ?>" href="controller.php?action=directToProjectsPage">Projects</a>
         </div>
-    </div>
 </nav>
 
 <style>
-    h5 
+    #title 
     {
         font-family: Andale Mono, monospace;
         text-align: center;

@@ -5,15 +5,90 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHP.php to edit this template
  */
 ?>
-
-    <p style="font-size: 17px;">
-        The Knox Union Cemetery, formerly known as Edenburg Cemetery,
-            was established in 1885 by the G.A.R. (Grand Army of the Republic) citizens of Edenburg.
-            Peter Spargo, the post master of Eden, was also anxious to secure a site for the
-            cemetery for he was the 1st person buried in this cemetery (Section D, lot 7). The
-            original board was made up of five directors of G.A.R. and four local citizens. They
-            purchased 7 acres of land on the north-west corner of the then Mendenhall Farm. The ground
-            was dedicated May 30th 1885.
-    </p>
-
-
+<style>
+    /* style for blocks of content */
+    .row
+    {
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-top: 5%;
+        background: #e6f3ff;
+    }
+    #col01
+    {
+        margin-top: 1.25%;
+    }
+    #col02
+    {
+        margin-top: 1.25%;
+    }
+    #myImg /* keeps the image in the div */
+    {
+        max-width: 100%;
+        object-fit: contain;
+    }
+    p
+    {
+        font-family: Andale Mono, monospace;
+        font-size: 30px;
+        color: #004080;
+    }
+    h5
+    {
+        font-family: Andale Mono, monospace;
+        font-size: 55px;
+        color: #004080;
+    }
+    #bottomC
+    {
+        padding-bottom: 40px;
+    }
+</style>
+<!-- split divs in to columns -->
+<div class ="row">
+    <div id="col01" class="col-md-6">
+        <div class="form-group">
+            <!-- introduction -->
+            <h5>Slade</h5>
+            <p>An aspiring recent college graduate with a track record for being a dedicated hard worker, while also having a passion
+                for web development and programming.</p>
+            <a href="controller.php?action=directToAboutPage" class="btn btn-info">About Me</a>
+        </div>
+    </div>
+    <div id="col02" class="col-md-6">
+        <div class="form-group">
+            <img id="myImg" src="../Assets/me.jpg" alt="slade"/>
+        </div>
+    </div>
+</div>
+<div class ="row">
+    <div id="col01" class="col-md-6">
+        <div class="form-group">
+            <img id="myImg" src="../Assets/me.jpg" alt="slade"/>
+        </div>
+    </div>
+    <div id="col02" class="col-md-6">
+        <div class="form-group">
+            <h5>Projects</h5>
+            <p>I've worked on several big projects and many small projects. You can check out the programs I've created, including this website,
+                and how they were made here.</p>
+            <a href="controller.php?action=directToProjectsPage" class="btn btn-info">Projects</a>
+        </div>
+    </div>
+</div>
+<div id="bottomC" class ="row">
+    <div id="col01" class="col-md-6">
+        <div class="form-group">
+            <!-- introduction -->
+            <h5>Get in Touch</h5>
+            <p>If you want to contact me, you can send me an email through the form here, or give a me a text or call at my phone number. I look forward
+                to speaking with you.</p>
+            <a href="controller.php?action=directToContactMePage" class="btn btn-info">Contact Me</a>
+        </div>
+    </div>
+    <div id="col02" class="col-md-6">
+        <div class="form-group">
+            <img id="myImg" src="../Assets/me.jpg" alt="slade"/>
+        </div>
+    </div>
+</div>
