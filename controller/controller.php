@@ -22,6 +22,7 @@ else
     include '../view/includes/navbar.php';
     include '../view/home/home.php';
     include '../view/includes/foot.php';
+    include '../generalStyling.php';
     exit();
 }
 
@@ -34,27 +35,31 @@ switch ($action)
         include '../view/includes/navbar.php';
         include '../view/home/home.php';
         include '../view/includes/foot.php';
+        include '../generalStyling.php';
         break;
     case"directToAboutPage":
-        // variable to set active status in navbar
+        //variable to set active status in navbar
         $aboutActive = true;
         include '../view/includes/head.php';
         include '../view/includes/navbar.php';
         include '../view/About/about.php';
         include '../view/includes/foot.php';
+        include '../generalStyling.php';
         break;
     case"directToContactMePage":
         $contactUsActive = true;
         include '../view/includes/head.php';
         include '../view/includes/navbar.php';
         include '../view/ContactMe/contactMe.php';
-        include '../view/includes/foot.php';
+        //include '../view/includes/foot.php';
+        include '../generalStyling.php';
         break;
     case"directToProjectsPage":
         include '../view/includes/head.php';
         include '../view/includes/navbar.php';
         include '../view/Projects/projects.php';
-        include '../view/includes/foot.php';
+        //include '../view/includes/foot.php';
+        include '../generalStyling.php';
         break;
 }
 

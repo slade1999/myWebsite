@@ -5,15 +5,8 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHP.php to edit this template
  */
 ?>
+
 <style>
-    /* style for blocks of content */
-    .row
-    {
-        margin-left: 15%;
-        margin-right: 15%;
-        margin-top: 5%;
-        background: #e6f3ff;
-    }
     #col01
     {
         margin-top: 1.25%;
@@ -22,27 +15,13 @@
     {
         margin-top: 1.25%;
     }
-    #myImg /* keeps the image in the div */
-    {
-        max-width: 100%;
-        object-fit: contain;
-    }
     p
     {
         font-family: Andale Mono, monospace;
         font-size: 30px;
         color: #004080;
     }
-    h5
-    {
-        font-family: Andale Mono, monospace;
-        font-size: 55px;
-        color: #004080;
-    }
-    #bottomC
-    {
-        padding-bottom: 40px;
-    }
+    
 </style>
 <!-- split divs in to columns -->
 <div class ="row">
@@ -60,7 +39,7 @@
             <img id="myImg" src="../Assets/me.jpg" alt="slade"/>
         </div>
     </div>
-</div>
+</div> <!-- end of first block -->
 <div class ="row">
     <div id="col01" class="col-md-6">
         <div class="form-group">
@@ -75,11 +54,10 @@
             <a href="controller.php?action=directToProjectsPage" class="btn btn-info">Projects</a>
         </div>
     </div>
-</div>
+</div> 
 <div id="bottomC" class ="row">
     <div id="col01" class="col-md-6">
         <div class="form-group">
-            <!-- introduction -->
             <h5>Get in Touch</h5>
             <p>If you want to contact me, you can send me an email through the form here, or give a me a text or call at my phone number. I look forward
                 to speaking with you.</p>
@@ -91,4 +69,4 @@
             <img id="myImg" src="../Assets/me.jpg" alt="slade"/>
         </div>
     </div>
-</div>
+</div><br><br>
