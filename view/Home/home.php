@@ -21,6 +21,13 @@
         font-size: 30px;
         color: #004080;
     }
+    .row
+    {
+        background: #e6f3ff;
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-top: 5%;
+    }
     
 </style>
 <!-- split divs in to columns -->

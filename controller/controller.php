@@ -51,7 +51,7 @@ switch ($action)
         include '../view/includes/head.php';
         include '../view/includes/navbar.php';
         include '../view/ContactMe/contactMe.php';
-        //include '../view/includes/foot.php';
+        include '../view/includes/foot.php';
         include '../generalStyling.php';
         break;
     case"directToProjectsPage":
