@@ -162,8 +162,8 @@
             </div>
             <div class="col-md-4">
                 <div class="form-group">
-                    <span>At this job I was tasked with stocking the shelves of a Walmart Super Center. In this position I experienced
-                            having a quota. I learned how to manage my time effectively to meet the high requirements for each day, while also
+                    <span>At this job I was tasked with stocking the shelves of a Walmart Super Center. In this position I gained experience
+                            with having a quota. I learned how to manage my time effectively to meet the high requirements for each day, while also
                             providing great customer service.</span>
                 </div>
             </div>

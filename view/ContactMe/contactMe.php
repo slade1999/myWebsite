@@ -31,47 +31,80 @@
                 
         </div>
     </div>
-    <div class="col-md-6 text-center">
-        <div class="form-group">
-            <div class="row" style="margin-top: 5%;"> <!-- create row's for email form -->
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <label class="required" for="fName" class="required">First Name:</label>
-                        <input v-model="firstName" type="text" class="form-control" id="fName" required>
+    <div id="contactApp" class="col-md-6 text-center">
+            <div class="form-group">
+                <div class="row" style="margin-top: 5%;"> <!-- create row's for email form -->
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label class="required">Full Name:</label>
+                            <input id="name" type="text" class="form-control">
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <label class="required" for="lName" class="required">Last Name:</label>
-                        <input v-model="lastName" type="text" class="form-control" id="lName" required>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label>Email:</label>
+                            <input id="email" type="email" class="form-control">
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="form-group">
-                        <label class="required" for="email" class="required">Email:</label>
-                        <input v-model="email" type="text" class="form-control" id="email" required>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label>Your message:</label>
+                            <textarea rows="6" id="message" class="form-control"></textarea>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="form-group">
-                        <label class="required" for="message" class="required">Your message:</label>
-                        <textarea rows="6" v-model="message" type="text" class="form-control" id="message" required></textarea>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="form-group">
-                        <button>Submit</button>
+                <div class="row">
+                    <div class="col-md-12">
+                        <form id="contact-form" class="form-group"> <!--needs id for function to work-->
+                            <input type="submit" value="Send" class="btn btn-info">
+                        </form>
                     </div>
                 </div>
             </div>
-        </div>
     </div>
-</div><br><br>
+</div>
+<br><br>
+
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("FzxC55aUcYMpFabSY");
+   })();
+</script>
+<script>
+    window.onload = function() {
+        //when button is pressed
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            //get each user input
+             let name = document.getElementById("name").value;
+             let email = document.getElementById("email").value;
+             let message = document.getElementById("message").value;
+            var templateParams = { //variable holds all inputted data
+                from_name: name,
+                reply_to: email,
+                message: message
+            };
+            emailjs.send('service_nr16mdp', 'template_sjv9jpw', templateParams)//send parameters to emailjs
+                .then(function(response) {
+                   console.log('SUCCESS!', response.status, response.text);
+                   alert("Message sent successfully!");
+                   //clear input fields
+                   document.getElementById("name").value = "";
+                   document.getElementById("email").value = "";
+                   document.getElementById("message").value = "";
+                }, function(error) {
+                   console.log('FAILED...', error);
+                   alert("Message was not sent!");
+                });
+        });
+    };
+</script>
 
 
