@@ -66,7 +66,7 @@
     <div id="col01" class="col-md-6">
         <div class="form-group">
             <h5>Get in Touch</h5>
-            <p>If you want to contact me, you can send me an email through the form here, or give a me a text or call at my phone number. I look forward
+            <p>If you want to contact me, you can send me an email through the form here, or give me a text or call at my phone number. I look forward
                 to speaking with you.</p>
             <a href="controller.php?action=directToContactMePage" class="btn btn-info">Contact Me</a>
         </div>

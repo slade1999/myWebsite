@@ -21,13 +21,20 @@
     {
         background: #e6f3ff;
     }
+    img{
+        margin-right: 20px;
+    }
 </style>
 
 <div class="row" id="row1">
     <div class="col-md-6" id="column1">
         <div class="form-group">
             <h5 style="margin-top: 15%;">Lets Talk!</h5><br>
-            <a>Use this form to send me an email. You can also check out my social pages.</a>
+            <!-- Link icons to respective websites. -->
+            <a>Use this form to send me an email. You can also check out my social pages.</a><br><br>
+            <a href = "https://www.linkedin.com/in/slade-knepp-9a198b184/" target="_blank"><img src="../Assets/LinkedIn.png" alt="linkedIn" width="50px" /></a>
+            <a href = "https://github.com/slade1999" target="_blank"><img src="../Assets/github.png" alt="gitHub" width="50px"/></a>
+            <a href = "https://www.facebook.com/SladeKnepp7/" target="_blank"><img src="../Assets/facebook.png" alt="facebook" width="50px"/></a>
                 
         </div>
     </div>
@@ -91,18 +98,26 @@
                 reply_to: email,
                 message: message
             };
-            emailjs.send('service_nr16mdp', 'template_sjv9jpw', templateParams)//send parameters to emailjs
-                .then(function(response) {
-                   console.log('SUCCESS!', response.status, response.text);
-                   alert("Message sent successfully!");
-                   //clear input fields
-                   document.getElementById("name").value = "";
-                   document.getElementById("email").value = "";
-                   document.getElementById("message").value = "";
-                }, function(error) {
-                   console.log('FAILED...', error);
-                   alert("Message was not sent!");
-                });
+            //set requirements for form
+            if (name === "" || email === "" || message === "")
+            {
+                alert("Please fill out all fields!");
+            }
+            else
+            {
+                emailjs.send('service_nr16mdp', 'template_sjv9jpw', templateParams)//send parameters to emailjs
+                    .then(function(response) {
+                       console.log('SUCCESS!', response.status, response.text);
+                       alert("Message sent successfully!");
+                       //clear input fields
+                       document.getElementById("name").value = "";
+                       document.getElementById("email").value = "";
+                       document.getElementById("message").value = "";
+                    }, function(error) {
+                       console.log('FAILED...', error);
+                       alert("Message was not sent!");
+                    });
+            }
         });
     };
 </script>
