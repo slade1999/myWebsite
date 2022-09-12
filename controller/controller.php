@@ -58,7 +58,7 @@ switch ($action)
         include '../view/includes/head.php';
         include '../view/includes/navbar.php';
         include '../view/Projects/projects.php';
-        //include '../view/includes/foot.php';
+        include '../view/includes/foot.php';
         include '../generalStyling.php';
         break;
 }

@@ -56,8 +56,8 @@
     <div id="col02" class="col-md-6">
         <div class="form-group">
             <h5>Projects</h5>
-            <p>I've worked on several big projects and many small projects. You can check out the programs I've created, including this website,
-                and how they were made here.</p>
+            <p>I've worked on several big projects and many small projects. You can check out the programs I've created,
+                and see how they were made here.</p>
             <a href="controller.php?action=directToProjectsPage" class="btn btn-info">Projects</a>
         </div>
     </div>
