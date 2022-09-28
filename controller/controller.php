@@ -47,7 +47,7 @@ switch ($action)
         include '../generalStyling.php';
         break;
     case"directToContactMePage":
-        $contactUsActive = true;
+        $contactMeActive = true;
         include '../view/includes/head.php';
         include '../view/includes/navbar.php';
         include '../view/ContactMe/contactMe.php';
@@ -55,6 +55,7 @@ switch ($action)
         include '../generalStyling.php';
         break;
     case"directToProjectsPage":
+        $projectsActive = true;
         include '../view/includes/head.php';
         include '../view/includes/navbar.php';
         include '../view/Projects/projects.php';
