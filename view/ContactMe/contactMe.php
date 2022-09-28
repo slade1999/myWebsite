@@ -98,25 +98,32 @@
                 reply_to: email,
                 message: message
             };
-            //set requirements for form
-            if (name === "" || email === "" || message === "")
-            {
-                alert("Please fill out all fields!");
+            let isExecuted = confirm("Are you sure you want to submit this email? Please ensure email is spelled correctly!");
+            if (isExecuted) {
+                //set requirements for form
+                if (name === "" || email === "" || message === "")
+                {
+                    alert("Please fill out all fields!");
+                }
+                else
+                {
+                    emailjs.send('service_nr16mdp', 'template_sjv9jpw', templateParams)//send parameters to emailjs
+                        .then(function(response) {
+                           console.log('SUCCESS!', response.status, response.text);
+                           alert("Message sent successfully!");
+                           //clear input fields
+                           document.getElementById("name").value = "";
+                           document.getElementById("email").value = "";
+                           document.getElementById("message").value = "";
+                        }, function(error) {
+                           console.log('FAILED...', error);
+                           alert("Message was not sent!");
+                        });
+                }
             }
-            else
+            else 
             {
-                emailjs.send('service_nr16mdp', 'template_sjv9jpw', templateParams)//send parameters to emailjs
-                    .then(function(response) {
-                       console.log('SUCCESS!', response.status, response.text);
-                       alert("Message sent successfully!");
-                       //clear input fields
-                       document.getElementById("name").value = "";
-                       document.getElementById("email").value = "";
-                       document.getElementById("message").value = "";
-                    }, function(error) {
-                       console.log('FAILED...', error);
-                       alert("Message was not sent!");
-                    });
+                alert("You have cancelled this email.")
             }
         });
     };

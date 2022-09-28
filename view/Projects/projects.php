@@ -102,7 +102,7 @@
       $("#myImg2").attr("src","../assets/kuc2.jpg");
       $("#myImg3").attr("src","../assets/kuc3.jpg"); 
       $("#pHeader").text("Knox Union Cemetery Website");
-      $("#smallText").html("While working in an agile environment, me and 3 other classmates were able to create a great website for our client. In this website, the user is able to locate any specific individuals grave, on a map that is at the Knox Union Cemetery. I worked very hard along side my team members to bring this website to life, and it came out really well.");
+      $("#smallText").html("While working in an agile environment, me and 3 other classmates were able to create a great website for our client. In this website, the user is able to locate any specific individuals grave, on a map that is at the Knox Union Cemetery. I worked very hard along side my team members to bring this website to life, and it came out really well. You can check out the repository for it here, as it is not connected to my current GitHub account. https://github.com/kareemfelfel/KUCRebuild. Here is the link to the website. https://vcisprod.clarion.edu/~s_kaahmed/KUCRebuild/controller/controller.php?action=directToHomePage");
       document.body.scrollTop = 5000; // For Safari
       document.documentElement.scrollTop = 5000; // For Chrome, Firefox, IE and Opera
     }

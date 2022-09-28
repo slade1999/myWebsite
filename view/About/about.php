@@ -101,7 +101,7 @@
         <div class="col-md-12 text-center">
             <div class="form-group">
                 <!-- Text fields for buried individuals names. -->
-                <img id="myImg" src="../Assets/me.jpg" alt="slade"/>   
+                <img id="myImg" src="../Assets/meClarion.jpg" alt="slade"/>   
             </div>
         </div>
     </div>

@@ -14,6 +14,13 @@
     #col02
     {
         margin-top: 1.25%;
+        margin-right: -20%;
+    }
+    #myImg
+    {
+        border-style: double;
+        border-width: 10px;
+        border-color: #004080;
     }
     p
     {
@@ -43,14 +50,14 @@
     </div>
     <div id="col02" class="col-md-6">
         <div class="form-group">
-            <img id="myImg" src="../Assets/me.jpg" alt="slade"/>
+            <img id="myImg" src="../Assets/me2.jpg" alt="slade"/>
         </div>
     </div>
 </div> <!-- end of first block -->
 <div class ="row">
     <div id="col01" class="col-md-6">
         <div class="form-group">
-            <img id="myImg" src="../Assets/me.jpg" alt="slade"/>
+            <img id="myImg" src="../Assets/program.jpg" alt="slade"/>
         </div>
     </div>
     <div id="col02" class="col-md-6">
@@ -73,7 +80,7 @@
     </div>
     <div id="col02" class="col-md-6">
         <div class="form-group">
-            <img id="myImg" src="../Assets/me.jpg" alt="slade"/>
+            <img id="myImg" src="../Assets/me1.jpg" alt="slade"/>
         </div>
     </div>
 </div><br><br>

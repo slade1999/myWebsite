@@ -7,7 +7,7 @@
 ?>
 
 <style>
-#myImg /* keeps the image in the div */
+img /* keeps the image in the div */
 {
     max-width: 100%;
     object-fit: contain;
